@@ -14,19 +14,17 @@ o projeto utiliza o extenso acervo digital do governo para criar uma interface m
 ## Como Usar
 
 1. **Baixe e Instale:** Faça o download da pasta do aplicativo e abra o executavel **Lecture.exe**.
-
-2. **Explore o Acervo:** Navegue pelo acervo digital disponibilizado pelo governo e descubra as pérolas da literatura brasileira.
-
-3. **Desfrute da Leitura:** Experimente uma interface intuitiva que torna a leitura das obras clássicas uma experiência envolvente.
+![remote-shell](Images/remote-shell.png)
+3. **Explore o Acervo:** Navegue pelo acervo digital disponibilizado pelo governo e descubra as pérolas da literatura brasileira.
+![remote-shell](Images/remote-shell.png)
+4. **Pesquise suas Obras Preferidas:** Experimente utilizar a barra de busca para localizar o livro que você estava procurando..
 
 ## Colaboradores
 
-- [Seu Nome]
-- [Nome do Colaborador]
-- [Nome do Desenvolvedor]
-
-## Suporte e Feedback
-
-Para relatar problemas ou fornecer feedback, entre em contato conosco em [seu-email@example.com].
+- Pedro Luiz Tunin
+- Gustavo Rodrighero Ferreira
+- João Matheus Veríssimo Francisco
+- Natan Coelho de Medeiros
+- Viktor Bonazza Charlanti
 
 Agradecemos por escolher o **Lecture** para explorar o mundo fascinante da literatura clássica brasileira!
