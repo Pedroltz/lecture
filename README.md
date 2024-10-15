@@ -2,24 +2,29 @@
 
 ## Descrição
 
-Bem-vindo ao **Lecture**, o aplicativo dedicado à leitura das obras clássicas da **literatura brasileira**. Desenvolvido como atividade de conclusão de semestre durante meu ano letivo de Ciência da Computação na **Unisagrado**, 
-o projeto utiliza o extenso acervo digital do governo para criar uma interface mais amigável e organizada. Destaca-se que essa iniciativa nasceu de uma colaboração valiosa com o **colégio Tyto**.
+Bem-vindo ao **Lecture**, um aplicativo dedicado à leitura das obras clássicas da **literatura brasileira**. Este projeto foi desenvolvido como parte da conclusão do semestre do curso de Ciência da Computação na **Unisagrado**. O **Lecture** utiliza o acervo digital do governo brasileiro para oferecer uma interface intuitiva e organizada para a leitura dessas obras. O desenvolvimento do projeto foi uma colaboração com o **Colégio Tyto**.
 
 ## Funcionalidades
 
-- **Interface Intuitiva:** Desenvolvemos uma interface baseada em C# (WindowsForms) para integrar-se de maneira amigável e simples ao extenso repertório de obras clássicas brasileiras.
-![remote-shell](img/inicial.png)
-- **Pesquise suas Obras Preferidas:** Experimente utilizar a barra de busca para localizar o livro que você estava procurando..
-![remote-shell](img/pesquisa.png)
-- **Acesso ao Download dos livros:** O aplicativo permite o acesso do Donwload de todos os livros de forma facil e intuitiva.
-![remote-shell](img/baixandopdf.png)
+- **Interface Intuitiva:** A interface, desenvolvida em C# (WindowsForms), foi projetada para facilitar a navegação no vasto repertório de clássicos da literatura brasileira.
+  
+  ![Tela Inicial](img/inicial.png)
+
+- **Busca Facilitada:** Use a barra de pesquisa para localizar facilmente o livro que você deseja.
+
+  ![Busca de Obras](img/pesquisa.png)
+
+- **Downloads Simplificados:** Acesse e faça o download dos livros com facilidade diretamente pela interface.
+
+  ![Baixando PDF](img/baixandopdf.png)
 
 ## Como Usar
 
-1. **Baixe e Instale:** Faça o download da pasta do aplicativo e abra o executavel **Lecture.exe**.
-![remote-shell](img/baixando.png)
-3. **Explore o Acervo:** Navegue pelo acervo digital disponibilizado pelo governo e descubra as pérolas da literatura brasileira.
+1. **Baixe e Instale:** Faça o download da pasta do aplicativo e execute o arquivo **Lecture.exe**.
+   
+   ![Instalação](img/baixando.png)
 
+2. **Explore o Acervo:** Navegue pelo acervo digital disponibilizado pelo governo brasileiro e descubra obras-primas da literatura nacional.
 
 ## Colaboradores
 
@@ -29,4 +34,4 @@ o projeto utiliza o extenso acervo digital do governo para criar uma interface m
 - Natan Coelho de Medeiros
 - Viktor Bonazza Charlanti
 
-Agradecemos por escolher o **Lecture** para explorar o mundo fascinante da literatura clássica brasileira!
+Agradecemos por escolher o **Lecture** para sua jornada pelo mundo fascinante da literatura clássica brasileira!
