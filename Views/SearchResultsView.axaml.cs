@@ -26,10 +26,10 @@ public partial class SearchResultsView : UserControl
         resultsLabel.Text = $"Resultados ({_books.Count}):";
         _cover = await Task.Run(() => ImageLoader.LoadAsset("Assets/book-cape-1.png"));
         foreach (var book in _books)
-            resultsPanel.Children.Add(CreateBookButton(book));
+            resultsPanel.Children.Add(CreateBookCard(book));
     }
 
-    private Button CreateBookButton(BookBase book)
+    private Border CreateBookCard(BookBase book)
     {
         IBrush background = _cover != null
             ? new ImageBrush(_cover) { Stretch = Stretch.Fill }
@@ -37,33 +37,39 @@ public partial class SearchResultsView : UserControl
 
         var titleText = book.Title.Length > 20 ? book.Title[..17] + "..." : book.Title;
 
-        var btn = new Button
+        var card = new Border
         {
             Width = 180,
             Height = 250,
             Margin = new Avalonia.Thickness(6),
-            Tag = book.PdfLink,
             Cursor = new Cursor(StandardCursorType.Hand),
-            Padding = default,
             Background = background,
-            BorderThickness = default,
-            HorizontalContentAlignment = HorizontalAlignment.Center,
-            VerticalContentAlignment = VerticalAlignment.Center,
-            Content = new Border
+            ClipToBounds = true,
+            Child = new Border
             {
                 Background = new SolidColorBrush(Color.FromArgb(170, 255, 255, 255)),
                 Padding = new Avalonia.Thickness(4, 2),
+                VerticalAlignment = VerticalAlignment.Center,
+                HorizontalAlignment = HorizontalAlignment.Center,
                 Child = new TextBlock
                 {
                     Text = titleText,
                     TextAlignment = TextAlignment.Center,
                     TextWrapping = TextWrapping.Wrap,
                     MaxWidth = 160,
+                    Foreground = Brushes.Black,
                 },
             },
         };
 
-        btn.Click += (_, _) => { if (btn.Tag is string link) PdfOpener.Open(link); };
-        return btn;
+        card.PointerEntered += (_, _) => card.Opacity = 0.85;
+        card.PointerExited += (_, _) => card.Opacity = 1.0;
+        card.PointerReleased += (_, e) =>
+        {
+            if (e.InitialPressMouseButton == MouseButton.Left)
+                PdfOpener.Open(book.PdfLink);
+        };
+
+        return card;
     }
 }

@@ -43,7 +43,7 @@ public partial class MainWindow : Window
     {
         if (sender is Button btn && btn.Tag is string tag)
         {
-            searchBox.Text = "#" + tag;
+            searchBox.Text = tag;
             categoriesSubMenu.IsVisible = false;
             RunSearch();
         }
@@ -67,10 +67,9 @@ public partial class MainWindow : Window
         string query = searchBox.Text?.Trim() ?? string.Empty;
         if (string.IsNullOrEmpty(query)) { contentArea.Content = _homeView; return; }
 
-        var results = query.StartsWith('#')
-            ? _books.Where(b => b.Categories.Any(c =>
-                string.Equals(c, query[1..], StringComparison.OrdinalIgnoreCase))).ToList()
-            : _books.Where(b => b.Title.Contains(query, StringComparison.OrdinalIgnoreCase)).ToList();
+        var results = _books.Where(b =>
+            b.Title.Contains(query, StringComparison.OrdinalIgnoreCase) ||
+            b.Author.Contains(query, StringComparison.OrdinalIgnoreCase)).ToList();
 
         contentArea.Content = new SearchResultsView(results);
     }

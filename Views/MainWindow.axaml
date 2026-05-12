@@ -55,26 +55,26 @@
                 <StackPanel x:Name="categoriesSubMenu"
                             Background="#FFC83E25"
                             IsVisible="False">
-                    <Button Content="José de Alencar" Tag="JoséDeAlencar"
+                    <Button Content="José de Alencar" Tag="Alencar"
                             Height="40" HorizontalAlignment="Stretch"
                             HorizontalContentAlignment="Center"
                             Background="Transparent" Foreground="#FFF5F5F5"
                             BorderThickness="0" Click="CategoryTagClick"/>
-                    <Button Content="Machado de Assis" Tag="MachadoDeAssis"
+                    <Button Content="Machado de Assis" Tag="Machado de Assis"
                             Height="40" HorizontalAlignment="Stretch"
                             HorizontalContentAlignment="Center"
                             Background="Transparent" Foreground="#FFF5F5F5"
                             BorderThickness="0" Click="CategoryTagClick"/>
-                    <Button Content="Olavo Bilac" Tag="OlavoBilac"
+                    <Button Content="Olavo Bilac" Tag="Bilac"
                             Height="40" HorizontalAlignment="Stretch"
                             HorizontalContentAlignment="Center"
                             Background="Transparent" Foreground="#FFF5F5F5"
                             BorderThickness="0" Click="CategoryTagClick"/>
-                    <Button Content="Mais..."
+                    <Button Content="Lima Barreto" Tag="Barreto"
                             Height="40" HorizontalAlignment="Stretch"
                             HorizontalContentAlignment="Center"
                             Background="Transparent" Foreground="#FFF5F5F5"
-                            BorderThickness="0" Click="CategoriesMoreClick"/>
+                            BorderThickness="0" Click="CategoryTagClick"/>
                 </StackPanel>
             </StackPanel>
         </DockPanel>

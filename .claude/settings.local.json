@@ -8,7 +8,19 @@
       "Bash(python3 -m json.tool)",
       "Bash(curl -s \"https://gutendex.com/books/?languages=pt&page=1\")",
       "Bash(python3 -c ' *)",
-      "Bash(curl -s \"https://gutendex.com/books/?languages=pt&search=Machado+de+Assis\")"
+      "Bash(curl -s \"https://gutendex.com/books/?languages=pt&search=Machado+de+Assis\")",
+      "Bash(curl -s \"https://gutendex.com/books/?languages=pt&search=Jose+de+Alencar\")",
+      "Bash(curl -s \"https://gutendex.com/books/?languages=pt&search=Lima+Barreto\")",
+      "Bash(curl -s \"https://gutendex.com/books/?languages=pt&search=Castro+Alves\")",
+      "Bash(curl -s \"https://archive.org/advancedsearch.php?q=language%3APortuguese+AND+subject%3A%22Brazilian+literature%22+AND+mediatype%3Atexts&fl=identifier,title,creator,subject,format&output=json&rows=10&page=1\")",
+      "Bash(curl -s \"https://archive.org/advancedsearch.php?q=language%3APortuguese+AND+subject%3ALiteratura+AND+mediatype%3Atexts+AND+format%3APDF&fl=identifier,title,creator,subject&output=json&rows=10&page=1\")",
+      "Bash(curl -s -I \"http://www.dominiopublico.gov.br/download/texto/bv000196.pdf\")",
+      "Bash(curl -s -L -I \"https://www.dominiopublico.gov.br/download/texto/bv000196.pdf\")",
+      "Bash(curl -s -I \"https://www.brasiliana.usp.br/\")",
+      "Bash(curl -s \"https://bndigital.bn.gov.br/acervo-digital/api/v1/search?q=literatura+brasileira&format=pdf&size=5\")",
+      "Bash(curl -s \"https://openlibrary.org/search.json?q=literatura+brasileira+classicos&language=por&limit=10&fields=title,author_name,subject,key,cover_i\")",
+      "Bash(curl -s \"https://gutendex.com/books/?languages=pt\")",
+      "Bash(dotnet build *)"
     ]
   }
 }

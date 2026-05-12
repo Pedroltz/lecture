@@ -4,16 +4,15 @@ namespace Lecture.Services;
 
 public static class PdfOpener
 {
-    public static void Open(string pdfLink)
+    public static void Open(string link)
     {
-        var url = BooksDataService.BaseUrl + pdfLink;
         try
         {
-            Process.Start(new ProcessStartInfo { FileName = url, UseShellExecute = true });
+            Process.Start(new ProcessStartInfo { FileName = link, UseShellExecute = true });
         }
         catch (Exception ex)
         {
-            Debug.WriteLine($"Could not open PDF: {ex.Message}");
+            Debug.WriteLine($"Could not open book: {ex.Message}");
         }
     }
 }
