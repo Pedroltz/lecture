@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /home/tunin/Documentos/Projetos/SBW/lecture log --oneline)",
+      "Bash(curl -s \"https://viikdev.github.io/booksApi/data.json\")",
+      "Bash(curl -s \"http://www.dominiopublico.gov.br/pesquisa/ResultadoPesquisaObraForm.do?first=0&skip=0&tipo_midia=M&cpf_autor=&co_midia=2&no_autor=&no_obra=&co_categoria=2&submit_pesquisar=Pesquisar\" -L)",
+      "Bash(curl -s \"https://gutendex.com/books/?languages=pt&topic=Brazil&mime_type=application/pdf\")",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -s \"https://gutendex.com/books/?languages=pt&page=1\")",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s \"https://gutendex.com/books/?languages=pt&search=Machado+de+Assis\")"
+    ]
+  }
+}

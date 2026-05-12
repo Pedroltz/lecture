@@ -1,0 +1,39 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Lecture.Views.AboutView"
+             Background="#FFF0F0F0">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="32,24" Spacing="10">
+
+            <StackPanel.Styles>
+                <Style Selector="TextBlock">
+                    <Setter Property="Foreground" Value="#FF1A1A1A"/>
+                </Style>
+            </StackPanel.Styles>
+
+            <TextBlock Text="Créditos"
+                       FontSize="26" FontWeight="Bold"
+                       Margin="0,0,0,20"/>
+
+            <TextBlock Text="Projeto Extencionista de Programação de Computadores"
+                       FontSize="15" FontWeight="Bold"/>
+            <TextBlock Text="Prof. Dr. Elvio Gilberto"
+                       FontSize="14" Margin="0,0,0,16"/>
+
+            <TextBlock Text="Integrantes do Grupo Lecture"
+                       FontSize="15" FontWeight="Bold"/>
+            <TextBlock Text="Gustavo Rodrighero Ferreira"  FontSize="14"/>
+            <TextBlock Text="João Matheus Veríssimo Francisco" FontSize="14"/>
+            <TextBlock Text="Natan Coelho de Medeiros"    FontSize="14"/>
+            <TextBlock Text="Pedro Luiz Tunin"            FontSize="14"/>
+            <TextBlock Text="Viktor Bonazza Charlanti"    FontSize="14" Margin="0,0,0,28"/>
+
+            <!-- Logos -->
+            <StackPanel Orientation="Horizontal" Spacing="32" HorizontalAlignment="Center">
+                <Image x:Name="logoUnisagrado" Height="80" Stretch="Uniform"/>
+                <Image x:Name="logoMonolitica" Height="80" Stretch="Uniform"/>
+            </StackPanel>
+
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

@@ -1,0 +1,17 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Lecture.Views.SearchResultsView"
+             Background="#FFE6E6E6">
+    <DockPanel>
+        <TextBlock x:Name="resultsLabel"
+                   DockPanel.Dock="Top"
+                   FontSize="16" FontWeight="Bold"
+                   Margin="24,16,24,8"/>
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled"
+                      VerticalScrollBarVisibility="Auto">
+            <WrapPanel x:Name="resultsPanel"
+                       Margin="24,0,24,24"
+                       Orientation="Horizontal"/>
+        </ScrollViewer>
+    </DockPanel>
+</UserControl>

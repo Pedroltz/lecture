@@ -1,0 +1,108 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Lecture.Views.MainWindow"
+        Title="Lecture - Colégio Tyto"
+        MinWidth="700" MinHeight="500"
+        Width="900" Height="600"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid ColumnDefinitions="200,*">
+
+        <!-- Sidebar -->
+        <DockPanel Grid.Column="0" Background="#FF152447" LastChildFill="True">
+
+            <!-- Logo -->
+            <Border DockPanel.Dock="Top" Height="80" Background="Transparent">
+                <Image x:Name="logoImage" Stretch="Uniform" MaxHeight="70"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+
+            <!-- About button pinned to bottom -->
+            <Button x:Name="aboutButton"
+                    DockPanel.Dock="Bottom"
+                    Content="Sobre"
+                    Height="45"
+                    HorizontalAlignment="Stretch"
+                    HorizontalContentAlignment="Center"
+                    Background="Transparent"
+                    Foreground="#FFF5F5F5"
+                    BorderThickness="0"
+                    Click="AboutButtonClick"/>
+
+            <!-- Nav menu -->
+            <StackPanel>
+                <Button x:Name="homeButton"
+                        Content="Início"
+                        Height="45"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Center"
+                        Background="Transparent"
+                        Foreground="#FFF5F5F5"
+                        BorderThickness="0"
+                        Click="HomeButtonClick"/>
+
+                <Button x:Name="categoriesButton"
+                        Content="Categorias"
+                        Height="45"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Center"
+                        Background="Transparent"
+                        Foreground="#FFF5F5F5"
+                        BorderThickness="0"
+                        Click="CategoriesButtonClick"/>
+
+                <!-- Categories submenu (hidden by default) -->
+                <StackPanel x:Name="categoriesSubMenu"
+                            Background="#FFC83E25"
+                            IsVisible="False">
+                    <Button Content="José de Alencar" Tag="JoséDeAlencar"
+                            Height="40" HorizontalAlignment="Stretch"
+                            HorizontalContentAlignment="Center"
+                            Background="Transparent" Foreground="#FFF5F5F5"
+                            BorderThickness="0" Click="CategoryTagClick"/>
+                    <Button Content="Machado de Assis" Tag="MachadoDeAssis"
+                            Height="40" HorizontalAlignment="Stretch"
+                            HorizontalContentAlignment="Center"
+                            Background="Transparent" Foreground="#FFF5F5F5"
+                            BorderThickness="0" Click="CategoryTagClick"/>
+                    <Button Content="Olavo Bilac" Tag="OlavoBilac"
+                            Height="40" HorizontalAlignment="Stretch"
+                            HorizontalContentAlignment="Center"
+                            Background="Transparent" Foreground="#FFF5F5F5"
+                            BorderThickness="0" Click="CategoryTagClick"/>
+                    <Button Content="Mais..."
+                            Height="40" HorizontalAlignment="Stretch"
+                            HorizontalContentAlignment="Center"
+                            Background="Transparent" Foreground="#FFF5F5F5"
+                            BorderThickness="0" Click="CategoriesMoreClick"/>
+                </StackPanel>
+            </StackPanel>
+        </DockPanel>
+
+        <!-- Right panel: search bar + content -->
+        <Grid Grid.Column="1" RowDefinitions="48,*">
+
+            <!-- Search bar -->
+            <Border Grid.Row="0" Background="#FF2A53A4">
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Spacing="6">
+                    <TextBox x:Name="searchBox"
+                             Width="350" Height="32"
+                             Watermark="Pesquisar livro..."
+                             FontSize="13"
+                             KeyDown="SearchBoxKeyDown"/>
+                    <Button Content="Buscar"
+                            Height="32" Padding="12,0"
+                            Background="#FFCDCDCD"
+                            Click="SearchButtonClick"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Content area -->
+            <ContentControl Grid.Row="1" x:Name="contentArea"
+                            Background="#FFE6E6E6"/>
+        </Grid>
+    </Grid>
+</Window>
